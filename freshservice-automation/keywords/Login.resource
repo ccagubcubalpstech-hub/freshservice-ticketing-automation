@@ -12,4 +12,4 @@ Login To Freshservice
     Input Text      ${TXTBOX_USERNAME}    qatester.shane@gmail.com
     Input Text      ${TXTBOX_PASSWORD}    Alps1234*
     Click Button    ${BTN_SIGNIN}
-    Sleep           10s    
+    Sleep           3s    

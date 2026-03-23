@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.3 on win32)" generated="2026-03-23T16:35:05.305940" rpa="false" schemaversion="5">
+<suite id="s1" name="Freshservice-Ticketing-Automation" source="C:\Users\Carl Cagubcub\Documents\Test Scripts\freshservice-ticketing-automation">
+<suite id="s1-s1" name="Freshservice-Automation" source="C:\Users\Carl Cagubcub\Documents\Test Scripts\freshservice-ticketing-automation\freshservice-automation">
+<suite id="s1-s1-s1" name="Robot-Scripts" source="C:\Users\Carl Cagubcub\Documents\Test Scripts\freshservice-ticketing-automation\freshservice-automation\robot-scripts">
+<suite id="s1-s1-s1-s1" name="Freshservice-Login" source="C:\Users\Carl Cagubcub\Documents\Test Scripts\freshservice-ticketing-automation\freshservice-automation\robot-scripts\Freshservice-Login.robot">
+<test id="s1-s1-s1-s1-t1" name="Login To Freshservice" line="8">
+<kw name="Login To Freshservice" owner="Login">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-23T16:35:05.958658" level="INFO">Opening browser 'chrome' to base url 'https://alps-technologies.freshservice.com/ws/2/admin/home'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-23T16:35:05.957831" elapsed="5.062621"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${TXTBOX_USERNAME}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-03-23T16:35:11.020926" elapsed="1.655745"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-03-23T16:35:12.677306" level="INFO">Typing text 'qatester.shane@gmail.com' into text field '//*[@id="username"]'.</msg>
+<arg>${TXTBOX_USERNAME}</arg>
+<arg>qatester.shane@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-23T16:35:12.676954" elapsed="0.259095"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-03-23T16:35:12.936780" level="INFO">Typing text 'Alps1234*' into text field '//*[@id="password"]'.</msg>
+<arg>${TXTBOX_PASSWORD}</arg>
+<arg>Alps1234*</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-23T16:35:12.936351" elapsed="0.166030"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-03-23T16:35:13.103330" level="INFO">Clicking button '//*[@id="root"]/div[2]/div/div/div/div/div/div[2]/div[1]/form/div[1]/div[4]/div/button'.</msg>
+<arg>${BTN_SIGNIN}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-23T16:35:13.102750" elapsed="0.158122"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-23T16:35:23.263507" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-23T16:35:13.261302" elapsed="10.002830"/>
+</kw>
+<status status="PASS" start="2026-03-23T16:35:05.955802" elapsed="17.308750"/>
+</kw>
+<doc>Logs in to Freshservice with valid credentials.</doc>
+<status status="PASS" start="2026-03-23T16:35:05.944068" elapsed="17.321191"/>
+</test>
+<doc>Test Suite for Freshservice Login</doc>
+<status status="PASS" start="2026-03-23T16:35:05.524817" elapsed="17.750252"/>
+</suite>
+<status status="PASS" start="2026-03-23T16:35:05.503143" elapsed="17.780609"/>
+</suite>
+<status status="PASS" start="2026-03-23T16:35:05.492609" elapsed="17.800057"/>
+</suite>
+<status status="PASS" start="2026-03-23T16:35:05.319241" elapsed="17.982289"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Freshservice-Ticketing-Automation" id="s1" pass="1" fail="0" skip="0">Freshservice-Ticketing-Automation</stat>
+<stat name="Freshservice-Automation" id="s1-s1" pass="1" fail="0" skip="0">Freshservice-Ticketing-Automation.Freshservice-Automation</stat>
+<stat name="Robot-Scripts" id="s1-s1-s1" pass="1" fail="0" skip="0">Freshservice-Ticketing-Automation.Freshservice-Automation.Robot-Scripts</stat>
+<stat name="Freshservice-Login" id="s1-s1-s1-s1" pass="1" fail="0" skip="0">Freshservice-Ticketing-Automation.Freshservice-Automation.Robot-Scripts.Freshservice-Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
