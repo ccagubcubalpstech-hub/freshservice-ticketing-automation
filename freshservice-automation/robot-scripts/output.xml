@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.3 on win32)" generated="2026-03-23T13:39:08.934718" rpa="false" schemaversion="5">
+<suite id="s1" name="Freshservice-Login" source="C:\Users\Carl Cagubcub\Documents\Test Scripts\freshservice-ticketing-automation\freshservice-automation\robot-scripts\Freshservice-Login.robot">
+<test id="s1-t1" name="Login To Freshservice" line="8">
+<kw name="Login To Freshservice" owner="Login">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-23T13:39:09.113492" level="INFO">Opening browser 'chrome' to base url 'https://alps-technologies.freshservice.com/ws/2/admin/home'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-23T13:39:09.113268" elapsed="4.937717"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${TXTBOX_USERNAME}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-03-23T13:39:14.051326" elapsed="1.592308"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-03-23T13:39:15.644649" level="INFO">Typing text 'qatester.shane@gmail.com' into text field '//*[@id="username"]'.</msg>
+<arg>${TXTBOX_USERNAME}</arg>
+<arg>qatester.shane@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-23T13:39:15.644150" elapsed="0.190299"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-03-23T13:39:15.834937" level="INFO">Typing text 'Alps1234*' into text field '//*[@id="password"]'.</msg>
+<arg>${TXTBOX_PASSWORD}</arg>
+<arg>Alps1234*</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-23T13:39:15.834673" elapsed="0.091276"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-03-23T13:39:15.926330" level="INFO">Clicking button '//*[@id="root"]/div[2]/div/div/div/div/div/div[2]/div[1]/form/div[1]/div[4]/div/button'.</msg>
+<arg>${BTN_SIGNIN}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-23T13:39:15.926116" elapsed="0.082095"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-23T13:39:26.009619" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-23T13:39:16.008569" elapsed="10.001346"/>
+</kw>
+<status status="PASS" start="2026-03-23T13:39:09.112612" elapsed="16.897471"/>
+</kw>
+<doc>Logs in to Freshservice with valid credentials.</doc>
+<status status="PASS" start="2026-03-23T13:39:09.111731" elapsed="16.898837"/>
+</test>
+<doc>Test Suite for Freshservice Login</doc>
+<status status="PASS" start="2026-03-23T13:39:08.936065" elapsed="17.075446"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Freshservice-Login" id="s1" pass="1" fail="0" skip="0">Freshservice-Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

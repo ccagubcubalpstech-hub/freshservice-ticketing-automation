@@ -7,9 +7,9 @@ Library              SeleniumLibrary
 
 *** Keywords ***
 Login To Freshservice
-    [Documentation]    Logs in to Freshservice with valid credentials.
     Open Browser    ${URL}    ${BROWSER}
+    Wait Until Element Is Visible    ${TXTBOX_USERNAME}
     Input Text      ${TXTBOX_USERNAME}    qatester.shane@gmail.com
     Input Text      ${TXTBOX_PASSWORD}    Alps1234*
     Click Button    ${BTN_SIGNIN}
-    Sleep           2s    
+    Sleep           10s    
