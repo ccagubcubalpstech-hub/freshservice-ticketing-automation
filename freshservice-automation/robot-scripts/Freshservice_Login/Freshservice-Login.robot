@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation        Test Suite for Freshservice Login
-Resource             ../resources/login-page.resource
-Resource             ../keywords/Login.resource
+Resource             ../../resources/login-page.resource
+Resource             ../../keywords/Login.resource
 Suite Teardown       Close Browser
 
 *** Test Cases ***
