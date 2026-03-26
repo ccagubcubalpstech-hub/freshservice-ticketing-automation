@@ -2,10 +2,9 @@
 Documentation     Resources for Dashboard Page
 Library           SeleniumLibrary
 
-**** Variables ***
-${URL}                                                
-${HEADER_CREATE_TICKET}                               
-${DROPDOWN_SELECT_TEMPLATE}                          
+**** Variables ***                                    
+${HEADER_CREATE_TICKET}                               New Incident                             
+${DROPDOWN_SELECT_TEMPLATE}                           
 ${TXTBOX_REQUESTER}                                  
 ${TXTBOX_REQUESTER_OPTION}                           
 ${TXTBOX_SUBJECT}                                  

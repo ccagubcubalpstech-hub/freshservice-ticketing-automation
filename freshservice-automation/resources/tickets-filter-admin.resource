@@ -4,33 +4,75 @@ Library           SeleniumLibrary
 
 
 *** Variables ***
-${BTN_BASIC_FILTER}                    //*[@id="basic-advanced-filter-toggler"]/button[1]
-${BTN_ADVANCED_FILTER}                 //*[@id="basic-advanced-filter-toggler"]/button[2]
-${TXTBOX_SEARCH_FIELDS}                //*[@id="ember987"]
-${TXTBOX_WORKSPACES}                   //*[@id="ember1745_workspace_id"]
-#WORKSPACES COMBOBOX OPTIONS
-${TXTBOX_AGENTS}                       //*[@id="ember1761_responder_id"]
-#AGENTS COMBOBOX OPTIONS
-${DROPDOWN_CREATED}                    //*[@id="ember999"]
-${OPTION_ANY}                          //*[@id="ember-power-select-options-ember1783-0"]
-${OPTION_WITHIN_5_MINUTES}             //*[@id="ember-power-select-options-ember1783-1"]
-${OPTION_WITHIN_15_MINUTES}            //*[@id="ember-power-select-options-ember1783-2"]
-${OPTION_WITHIN_30_MINUTES}            //*[@id="ember-power-select-options-ember1783-3"]
-${OPTION_WITHIN_1_HOUR}                //*[@id="ember-power-select-options-ember1783-4"]
-${OPTION_WITHIN_4_HOURS}               //*[@id="ember-power-select-options-ember1783-5"]
-${OPTION_WITHIN_12_HOURS}              //*[@id="ember-power-select-options-ember1783-6"]
-${OPTION_WITHIN_24_HOURS}              //*[@id="ember-power-select-options-ember1783-7"]
-${OPTION_WITHIN_TODAY}                 //*[@id="ember-power-select-options-ember1783-8"]
-${OPTION_WITHIN_YESTERDAY}             //*[@id="ember-power-select-options-ember1783-9"]
-${OPTION_WITHIN_THIS_WEEK}             //*[@id="ember-power-select-options-ember1783-10"]
-${OPTION_WITHIN_LAST_MONTH}            //*[@id="ember-power-select-options-ember1783-11"]
-${OPTION_LAST_2_MONTHS}                //*[@id="ember-power-select-options-ember1783-12"]
-${OPTION_LAST_6_MONTHS}                //*[@id="ember-power-select-options-ember1783-13"]
-${OPTION_SELECT_TIME_PERIOD}           //*[@id="ember-power-select-options-ember1783-14"]
+${BTN_BASIC_FILTER}                    
+${BTN_ADVANCED_FILTER}                 
+${TXTBOX_SEARCH_FIELDS}                
+${DROPDOWN_CREATED}                    
+${OPTION_ANY}                          
+${OPTION_WITHIN_5_MINUTES}             
+${OPTION_WITHIN_15_MINUTES}            
+${OPTION_WITHIN_30_MINUTES}            
+${OPTION_WITHIN_1_HOUR}                
+${OPTION_WITHIN_4_HOURS}               
+${OPTION_WITHIN_12_HOURS}             
+${OPTION_WITHIN_24_HOURS}              
+${OPTION_WITHIN_TODAY}                
+${OPTION_WITHIN_YESTERDAY}             
+${OPTION_WITHIN_THIS_WEEK}            
+${OPTION_WITHIN_LAST_MONTH}           
+${OPTION_LAST_2_MONTHS}               
+${OPTION_LAST_6_MONTHS}               
+${OPTION_SELECT_TIME_PERIOD}          
 #IF SELECT TIME PERIOD IS CHOSEN
-${TXTBOX_CHOOSE_RANGE}                 //*[@id="ember2129"]
-
-
+${TXTBOX_CHOOSE_RANGE}
+${TXTBOX_AGENTS}                       
+#COMBOBOX OPTIONS
+${TXTBOX_REQUESTERS}
+#COMBOBOX OPTIONS
+${TXTBOX_DEPARTMENTS}
+#COMBOBOX OPTIONS
+${TXTBOX_GROUPS}
+#COMBOBOX OPTIONS
+${DROPDOWN_START_DATE}
+#DROPDOWN OPTIONS
+${DROPDOWN_END_DATE}
+#DROPDOWN OPTIONS
+${RDB_DUEBY_OVERDURE}
+${RDB_DUEBY_TODAY}
+${RDB_DUEBY_TOMORROW}
+${RDB_DUEBY_8HRS}
+${RDB_FR_OVERDUE}
+${RDB_FR_TODAY}
+${TXTBOX_STATUS}
+#COMBOBOX OPTIONS
+${RDB_PRIO_LOW}
+${RDB_PRIO_MEDIUM}
+${RDB_PRIO_HIGH}
+${RDB_PRIO_URGENT}
+${RDB_URGENCY_LOW}
+${RDB_URGENCY_MEDIUM}
+${RDB_URGENCY_HIGH}
+${RDB_IMPACT_LOW}
+${RDB_IMPACT_MEDIUM}
+${RDB_IMPACT_HIGH}
+${RDB_TYPE_INCIDENT}
+${RDB_TYPE_SERVICE_REQUEST}
+${RDB_TYPE_MAJOR_INCIDENT}
+${TXTBOX_SOURCE}
+#COMBOBOX OPTIONS
+${TXTBOX_TAGS}
+#COMBOBOX OPTIONS
+${DROPDOWN_CATEGORY}
+${RDB_MIT_EMPTY}
+${RDB_MIT_FULL_OUTAGE}
+${RDB_MIT_PARTIAL_OUTAGE}
+${RDB_MIT_PERFORMANCE_DEGRADATION}
+${TXTBOX_LABEL}
+#COMBOBOX OPTIONS
+${DROPDOWN_STATUS_PAGE_INCIDENT}
+${OPTION_PUBLISHED}
+${OPTION_NOT_PUBLISHED}
+${BTN_APPLY}
 
 
               
