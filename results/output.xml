@@ -1,46 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.2 (Python 3.14.3 on win32)" generated="2026-03-25T15:15:04.930522" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.2 (Python 3.14.3 on win32)" generated="2026-03-26T09:31:23.476753" rpa="false" schemaversion="5">
 <suite id="s1" name="Freshservice-Ticketing-Automation" source="C:\Users\Carl Cagubcub\Documents\Test Scripts\freshservice-ticketing-automation">
 <suite id="s1-s1" name="Freshservice-Automation" source="C:\Users\Carl Cagubcub\Documents\Test Scripts\freshservice-ticketing-automation\freshservice-automation">
 <suite id="s1-s1-s1" name="Robot-Scripts" source="C:\Users\Carl Cagubcub\Documents\Test Scripts\freshservice-ticketing-automation\freshservice-automation\robot-scripts">
-<suite id="s1-s1-s1-s1" name="Create-a-Ticket" source="C:\Users\Carl Cagubcub\Documents\Test Scripts\freshservice-ticketing-automation\freshservice-automation\robot-scripts\Create-a-Ticket.robot">
-<test id="s1-s1-s1-s1-t1" name="Create a Ticket" line="8">
-<kw name="Login To Freshservice">
-<msg time="2026-03-25T15:15:05.032177" level="FAIL">No keyword with name 'Login To Freshservice' found. Did you try using keyword 'BuiltIn.Log' and forgot to use enough whitespace between keyword and arguments?</msg>
-<status status="FAIL" start="2026-03-25T15:15:05.031464" elapsed="0.004148">No keyword with name 'Login To Freshservice' found. Did you try using keyword 'BuiltIn.Log' and forgot to use enough whitespace between keyword and arguments?</status>
+<suite id="s1-s1-s1-s1" name="Freshservice Login" source="C:\Users\Carl Cagubcub\Documents\Test Scripts\freshservice-ticketing-automation\freshservice-automation\robot-scripts\Freshservice_Login">
+<suite id="s1-s1-s1-s1-s1" name="Freshservice-Login" source="C:\Users\Carl Cagubcub\Documents\Test Scripts\freshservice-ticketing-automation\freshservice-automation\robot-scripts\Freshservice_Login\Freshservice-Login.robot">
+<test id="s1-s1-s1-s1-s1-t1" name="Login To Freshservice" line="8">
+<kw name="Login To Freshservice" owner="keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-26T09:31:23.814137" level="INFO">Opening browser 'chrome' to base url 'https://alps-technologies.freshservice.com/ws/2/admin/home'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-26T09:31:23.813624" elapsed="5.675119"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-26T09:31:29.489159" elapsed="0.056977"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${TXTBOX_USERNAME}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-03-26T09:31:29.546723" elapsed="1.177045"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-03-26T09:31:30.725416" level="INFO">Typing text 'qatester.shane@gmail.com' into text field '//*[@id="username"]'.</msg>
+<arg>${TXTBOX_USERNAME}</arg>
+<arg>qatester.shane@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-26T09:31:30.724650" elapsed="0.473385"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-03-26T09:31:31.199397" level="INFO">Typing text 'Alps1234*' into text field '//*[@id="password"]'.</msg>
+<arg>${TXTBOX_PASSWORD}</arg>
+<arg>Alps1234*</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-26T09:31:31.198712" elapsed="0.173108"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-03-26T09:31:31.373637" level="INFO">Clicking button '//*[@id="root"]/div[2]/div/div/div/div/div/div[2]/div[1]/form/div[1]/div[4]/div/button'.</msg>
+<arg>${BTN_SIGNIN}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-26T09:31:31.372352" elapsed="0.208413"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-26T09:31:41.583578" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-26T09:31:31.581335" elapsed="10.003144"/>
+</kw>
+<status status="PASS" start="2026-03-26T09:31:23.812208" elapsed="17.772835"/>
 </kw>
 <doc>Logs in to Freshservice with valid credentials.</doc>
-<status status="FAIL" start="2026-03-25T15:15:05.019414" elapsed="0.017300">No keyword with name 'Login To Freshservice' found. Did you try using keyword 'BuiltIn.Log' and forgot to use enough whitespace between keyword and arguments?</status>
+<status status="PASS" start="2026-03-26T09:31:23.806748" elapsed="17.779547"/>
 </test>
-<kw name="Close Browser" type="TEARDOWN">
-<msg time="2026-03-25T15:15:05.049386" level="FAIL">No keyword with name 'Close Browser' found.</msg>
-<status status="FAIL" start="2026-03-25T15:15:05.048643" elapsed="0.004286">No keyword with name 'Close Browser' found.</status>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-26T09:31:41.596986" elapsed="2.282362"/>
 </kw>
 <doc>Test Suite for Freshservice Login</doc>
-<status status="FAIL" start="2026-03-25T15:15:04.983970" elapsed="0.069625">Suite teardown failed:
-No keyword with name 'Close Browser' found.</status>
+<status status="PASS" start="2026-03-26T09:31:23.557527" elapsed="20.322161"/>
 </suite>
-<status status="FAIL" start="2026-03-25T15:15:04.976096" elapsed="0.089856"/>
+<status status="PASS" start="2026-03-26T09:31:23.541562" elapsed="20.346526"/>
 </suite>
-<status status="FAIL" start="2026-03-25T15:15:04.968433" elapsed="0.101623"/>
+<status status="PASS" start="2026-03-26T09:31:23.536600" elapsed="20.359138"/>
 </suite>
-<status status="FAIL" start="2026-03-25T15:15:04.934882" elapsed="0.144490"/>
+<status status="PASS" start="2026-03-26T09:31:23.531813" elapsed="20.369222"/>
+</suite>
+<status status="PASS" start="2026-03-26T09:31:23.485992" elapsed="20.420828"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Freshservice-Ticketing-Automation" id="s1" pass="0" fail="1" skip="0">Freshservice-Ticketing-Automation</stat>
-<stat name="Freshservice-Automation" id="s1-s1" pass="0" fail="1" skip="0">Freshservice-Ticketing-Automation.Freshservice-Automation</stat>
-<stat name="Robot-Scripts" id="s1-s1-s1" pass="0" fail="1" skip="0">Freshservice-Ticketing-Automation.Freshservice-Automation.Robot-Scripts</stat>
-<stat name="Create-a-Ticket" id="s1-s1-s1-s1" pass="0" fail="1" skip="0">Freshservice-Ticketing-Automation.Freshservice-Automation.Robot-Scripts.Create-a-Ticket</stat>
+<stat name="Freshservice-Ticketing-Automation" id="s1" pass="1" fail="0" skip="0">Freshservice-Ticketing-Automation</stat>
+<stat name="Freshservice-Automation" id="s1-s1" pass="1" fail="0" skip="0">Freshservice-Ticketing-Automation.Freshservice-Automation</stat>
+<stat name="Robot-Scripts" id="s1-s1-s1" pass="1" fail="0" skip="0">Freshservice-Ticketing-Automation.Freshservice-Automation.Robot-Scripts</stat>
+<stat name="Freshservice Login" id="s1-s1-s1-s1" pass="1" fail="0" skip="0">Freshservice-Ticketing-Automation.Freshservice-Automation.Robot-Scripts.Freshservice Login</stat>
+<stat name="Freshservice-Login" id="s1-s1-s1-s1-s1" pass="1" fail="0" skip="0">Freshservice-Ticketing-Automation.Freshservice-Automation.Robot-Scripts.Freshservice Login.Freshservice-Login</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2026-03-25T15:15:04.985119" level="ERROR">Error in file 'C:\Users\Carl Cagubcub\Documents\Test Scripts\freshservice-ticketing-automation\freshservice-automation\robot-scripts\Create-a-Ticket.robot' on line 3: Resource file '..\..\resources\login-page.resource' does not exist.</msg>
-<msg time="2026-03-25T15:15:04.994133" level="ERROR">Error in file 'C:\Users\Carl Cagubcub\Documents\Test Scripts\freshservice-ticketing-automation\freshservice-automation\robot-scripts\Create-a-Ticket.robot' on line 4: Resource file '..\..\keywords\Login.resource' does not exist.</msg>
 </errors>
 </robot>

@@ -46,3 +46,24 @@ ${UL_SQUARE}                                          Square
 ${BTN_INCREASE_INDENT}                                //*[@id="indent-3"]/svg
 ${BTN_TEXT_COLOR}                                     //*[@id="textColor-3"]/svg
 ${BTN_BACKGROUND_COLOR}                               //*[@id="backgroundColor-3"]/svg
+${BTN_INSERT_LINK}                                    //*[@id="insertLink-1"]/svg
+${BTN_INSERT_IMAGE}                                   //*[@id="insertImage-1"]/svg
+${BTN_CLEAR_FORMATTING}                               //*[@id="clearFormatting-1"]/svg
+${BTN_CANNED_RESPONSE}                                //*[@id="insertCannedResponse-1"]/svg
+${DROPDOWN_CATEGORY}                                  //*[@id="ember1196"]
+${OPTION_HARDWARE}                                    Hardware
+${OPTION_SOFTWARE}                                    Software
+${OPTION_NETWORK}                                     Network
+${OPTION_OTHERS}                                      Others
+${TXTBOX_START_DATE}                                  //*[@id="ember1207"]
+${TXTBOX_START_TIME}                                  //*[@id="ember1227"]/input
+${BTN_RESET_START_DATE_TIME}                          //*[@id="date-picker-wrapper-ember1207"]/button
+${TXTBOX_END_DATE}                                    //*[@id="ember1235"]
+${TXTBOX_END_TIME}                                    //*[@id="ember273"]
+${BTN_RESET_END_DATE_TIME}                            //*[@id="date-picker-wrapper-ember1235"]/button
+${PLANNED_EFFORT}                                     //*[@id="ember284_plannedEffort"]
+${BTN_CANCEL}                                         //*[@id="form-footer"]/div/button[1]
+${BTN_SUBMIT}                                         //*[@id="form-submit"]
+
+
+
