@@ -6,12 +6,12 @@ Library           SeleniumLibrary
 *** Variables ***
 ${BTN_BASIC_FILTER}                    //*[@id="basic-advanced-filter-toggler"]/button[1]
 ${BTN_ADVANCED_FILTER}                 //*[@id="basic-advanced-filter-toggler"]/button[2]
-${TXTBOX_SEARCH_FIELDS}                //*[@id="ember1005"]
+${TXTBOX_SEARCH_FIELDS}                //*[@id="ember987"]
 ${TXTBOX_WORKSPACES}                   //*[@id="ember1745_workspace_id"]
 #WORKSPACES COMBOBOX OPTIONS
 ${TXTBOX_AGENTS}                       //*[@id="ember1761_responder_id"]
 #AGENTS COMBOBOX OPTIONS
-${DROPDOWN_CREATED}
+${DROPDOWN_CREATED}                    //*[@id="ember999"]
 ${OPTION_ANY}                          //*[@id="ember-power-select-options-ember1783-0"]
 ${OPTION_WITHIN_5_MINUTES}             //*[@id="ember-power-select-options-ember1783-1"]
 ${OPTION_WITHIN_15_MINUTES}            //*[@id="ember-power-select-options-ember1783-2"]
@@ -29,3 +29,8 @@ ${OPTION_LAST_6_MONTHS}                //*[@id="ember-power-select-options-ember
 ${OPTION_SELECT_TIME_PERIOD}           //*[@id="ember-power-select-options-ember1783-14"]
 #IF SELECT TIME PERIOD IS CHOSEN
 ${TXTBOX_CHOOSE_RANGE}                 //*[@id="ember2129"]
+
+
+
+
+              
