@@ -9,21 +9,21 @@ ${TXTBOX_REQUESTER}
 ${TXTBOX_REQUESTER_OPTION}                           
 ${TXTBOX_SUBJECT}                                  
 ${CMBBOX_SOURCE}                                 
-${OPTION_PHONE}                                       Phone
-${OPTION_EMAIL}                                       Email
-${OPTION_PORTAL}                                      Portal
-${OPTION_CHAT}                                        Chat
-${OPTION_FEEDBACK_WIDGET}                             Feedback Widget
-${OPTION_YAMMER}                                      Yammer
-${OPTION_AWSCLOUDWATCH}                               AWS CloudWatch
-${OPTION_PAGERDUTY}                                   PagerDuty
-${OPTION_WALKUP}                                      Walk-up
-${OPTION_SLACK}                                       Slack
-${OPTION_WORKPLACE}                                   Workplace
-${OPTION_TEAMS}                                       MS Teams
-${OPTION_EMPLOYEE_OFFBOARDING}                        Employee Offboarding
-${OPTION_JOURNEY}                                     Journey
-${OPTION_KNOWLEDGE_INSIGHT}                           Knowledge Insights
+${OL_PHONE}                                       Phone
+${OL_EMAIL}                                       Email
+${OL_PORTAL}                                      Portal
+${OL_CHAT}                                        Chat
+${OL_FEEDBACK_WIDGET}                             Feedback Widget
+${OL_YAMMER}                                      Yammer
+${OL_AWSCLOUDWATCH}                               AWS CloudWatch
+${OL_PAGERDUTY}                                   PagerDuty
+${OL_WALKUP}                                      Walk-up
+${OL_SLACK}                                       Slack
+${OL_WORKPLACE}                                   Workplace
+${OL_TEAMS}                                       MS Teams
+${OL_EMPLOYEE_OFFBOARDING}                        Employee Offboarding
+${OL_JOURNEY}                                     Journey
+${OL_KNOWLEDGE_INSIGHT}                           Knowledge Insights
 ${TEXTAREA_DESCRIPTION}                               
 ${FONT_BOLD}                                          
 ${FONT_ITALIC}                                        
@@ -50,10 +50,10 @@ ${BTN_INSERT_IMAGE}
 ${BTN_CLEAR_FORMATTING}                               
 ${BTN_CANNED_RESPONSE}                              
 ${DROPDOWN_CATEGORY}                                  
-${OPTION_HARDWARE}                                    Hardware
-${OPTION_SOFTWARE}                                    Software
-${OPTION_NETWORK}                                     Network
-${OPTION_OTHERS}                                      Others
+${OL_HARDWARE}                                    Hardware
+${OL_SOFTWARE}                                    Software
+${OL_NETWORK}                                     Network
+${OL_OTHERS}                                      Others
 ${TXTBOX_START_DATE}                                  
 ${TXTBOX_START_TIME}                                  
 ${BTN_RESET_START_DATE_TIME}                          

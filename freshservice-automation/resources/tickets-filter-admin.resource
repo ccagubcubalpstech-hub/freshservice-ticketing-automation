@@ -8,21 +8,21 @@ ${BTN_BASIC_FILTER}
 ${BTN_ADVANCED_FILTER}                 
 ${TXTBOX_SEARCH_FIELDS}                
 ${DROPDOWN_CREATED}                    
-${OPTION_ANY}                          
-${OPTION_WITHIN_5_MINUTES}             
-${OPTION_WITHIN_15_MINUTES}            
-${OPTION_WITHIN_30_MINUTES}            
-${OPTION_WITHIN_1_HOUR}                
-${OPTION_WITHIN_4_HOURS}               
-${OPTION_WITHIN_12_HOURS}             
-${OPTION_WITHIN_24_HOURS}              
-${OPTION_WITHIN_TODAY}                
-${OPTION_WITHIN_YESTERDAY}             
-${OPTION_WITHIN_THIS_WEEK}            
-${OPTION_WITHIN_LAST_MONTH}           
-${OPTION_LAST_2_MONTHS}               
-${OPTION_LAST_6_MONTHS}               
-${OPTION_SELECT_TIME_PERIOD}          
+${OL_ANY}                          
+${OL_WITHIN_5_MINUTES}             
+${OL_WITHIN_15_MINUTES}            
+${OL_WITHIN_30_MINUTES}            
+${OL_WITHIN_1_HOUR}                
+${OL_WITHIN_4_HOURS}               
+${OL_WITHIN_12_HOURS}             
+${OL_WITHIN_24_HOURS}              
+${OL_WITHIN_TODAY}                
+${OL_WITHIN_YESTERDAY}             
+${OL_WITHIN_THIS_WEEK}            
+${OL_WITHIN_LAST_MONTH}           
+${OL_LAST_2_MONTHS}               
+${OL_LAST_6_MONTHS}               
+${OL_SELECT_TIME_PERIOD}          
 #IF SELECT TIME PERIOD IS CHOSEN
 ${TXTBOX_CHOOSE_RANGE}
 ${TXTBOX_AGENTS}                       
@@ -70,8 +70,8 @@ ${RDB_MIT_PERFORMANCE_DEGRADATION}
 ${TXTBOX_LABEL}
 #COMBOBOX OPTIONS
 ${DROPDOWN_STATUS_PAGE_INCIDENT}
-${OPTION_PUBLISHED}
-${OPTION_NOT_PUBLISHED}
+${OL_PUBLISHED}
+${OL_NOT_PUBLISHED}
 ${BTN_APPLY}
 
 
