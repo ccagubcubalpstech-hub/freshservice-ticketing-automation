@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.2 (Python 3.14.3 on win32)" generated="2026-03-26T10:29:12.039632" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.2 (Python 3.14.3 on win32)" generated="2026-03-30T08:41:39.855712" rpa="false" schemaversion="5">
 <suite id="s1" name="Freshservice-Ticketing-Automation" source="C:\Users\Carl Cagubcub\Documents\Test Scripts\freshservice-ticketing-automation">
 <suite id="s1-s1" name="Freshservice-Automation" source="C:\Users\Carl Cagubcub\Documents\Test Scripts\freshservice-ticketing-automation\freshservice-automation">
 <suite id="s1-s1-s1" name="Robot-Scripts" source="C:\Users\Carl Cagubcub\Documents\Test Scripts\freshservice-ticketing-automation\freshservice-automation\robot-scripts">
@@ -8,67 +8,67 @@
 <test id="s1-s1-s1-s1-s1-t1" name="Login To Freshservice" line="8">
 <kw name="Login To Freshservice" owner="keywords">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-03-26T10:29:12.434184" level="INFO">Opening browser 'chrome' to base url 'https://alps-technologies.freshservice.com/ws/2/admin/home'.</msg>
+<msg time="2026-03-30T08:41:40.528595" level="INFO">Opening browser 'chrome' to base url 'https://alps-technologies.freshservice.com/ws/2/admin/home'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-03-26T10:29:12.433786" elapsed="5.107922"/>
+<status status="PASS" start="2026-03-30T08:41:40.528009" elapsed="7.577267"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2026-03-26T10:29:17.542099" elapsed="0.035443"/>
+<status status="PASS" start="2026-03-30T08:41:48.105722" elapsed="0.049617"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${TXTBOX_USERNAME}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-03-26T10:29:17.577860" elapsed="2.058729"/>
+<status status="PASS" start="2026-03-30T08:41:48.155819" elapsed="1.374752"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-03-26T10:29:19.637335" level="INFO">Typing text 'qatester.shane@gmail.com' into text field '//*[@id="username"]'.</msg>
+<msg time="2026-03-30T08:41:49.532104" level="INFO">Typing text 'qatester.shane@gmail.com' into text field '//*[@id="username"]'.</msg>
 <arg>${TXTBOX_USERNAME}</arg>
 <arg>qatester.shane@gmail.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-26T10:29:19.636884" elapsed="0.307951"/>
+<status status="PASS" start="2026-03-30T08:41:49.530863" elapsed="0.333754"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-03-26T10:29:19.951655" level="INFO">Typing text 'Alps1234*' into text field '//*[@id="password"]'.</msg>
+<msg time="2026-03-30T08:41:49.865574" level="INFO">Typing text 'Alps1234*' into text field '//*[@id="password"]'.</msg>
 <arg>${TXTBOX_PASSWORD}</arg>
 <arg>Alps1234*</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-26T10:29:19.945181" elapsed="0.220074"/>
+<status status="PASS" start="2026-03-30T08:41:49.865020" elapsed="0.108127"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-03-26T10:29:20.167615" level="INFO">Clicking button '//*[@id="root"]/div[2]/div/div/div/div/div/div[2]/div[1]/form/div[1]/div[4]/div/button'.</msg>
+<msg time="2026-03-30T08:41:49.974678" level="INFO">Clicking button '//*[@id="root"]/div[2]/div/div/div/div/div/div[2]/div[1]/form/div[1]/div[4]/div/button'.</msg>
 <arg>${BTN_SIGNIN}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-26T10:29:20.165829" elapsed="0.095424"/>
+<status status="PASS" start="2026-03-30T08:41:49.973605" elapsed="0.124965"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<msg time="2026-03-26T10:29:25.505286" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-03-26T10:29:25.505997" level="FAIL">Element 'PUT DASHBOARD TITLE ELEMENT HERE' not visible after 5 seconds.</msg>
+<msg time="2026-03-30T08:41:55.289620" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-03-30T08:41:55.290012" level="FAIL">Element 'PUT DASHBOARD TITLE ELEMENT HERE' not visible after 5 seconds.</msg>
 <arg>PUT DASHBOARD TITLE ELEMENT HERE</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="FAIL" start="2026-03-26T10:29:20.261642" elapsed="5.259002">Element 'PUT DASHBOARD TITLE ELEMENT HERE' not visible after 5 seconds.</status>
+<status status="FAIL" start="2026-03-30T08:41:50.098950" elapsed="5.206017">Element 'PUT DASHBOARD TITLE ELEMENT HERE' not visible after 5 seconds.</status>
 </kw>
-<status status="FAIL" start="2026-03-26T10:29:12.432872" elapsed="13.088110">Element 'PUT DASHBOARD TITLE ELEMENT HERE' not visible after 5 seconds.</status>
+<status status="FAIL" start="2026-03-30T08:41:40.526530" elapsed="14.778785">Element 'PUT DASHBOARD TITLE ELEMENT HERE' not visible after 5 seconds.</status>
 </kw>
 <doc>Logs in to Freshservice with valid credentials.</doc>
-<status status="FAIL" start="2026-03-26T10:29:12.427693" elapsed="13.093786">Element 'PUT DASHBOARD TITLE ELEMENT HERE' not visible after 5 seconds.</status>
+<status status="FAIL" start="2026-03-30T08:41:40.516619" elapsed="14.789172">Element 'PUT DASHBOARD TITLE ELEMENT HERE' not visible after 5 seconds.</status>
 </test>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-03-26T10:29:25.537171" elapsed="2.339571"/>
+<status status="PASS" start="2026-03-30T08:41:55.310579" elapsed="2.271495"/>
 </kw>
 <doc>Test Suite for Freshservice Login</doc>
-<status status="FAIL" start="2026-03-26T10:29:12.125743" elapsed="15.751426"/>
+<status status="FAIL" start="2026-03-30T08:41:40.013657" elapsed="17.568664"/>
 </suite>
-<status status="FAIL" start="2026-03-26T10:29:12.110183" elapsed="15.777005"/>
+<status status="FAIL" start="2026-03-30T08:41:40.001251" elapsed="17.585454"/>
 </suite>
-<status status="FAIL" start="2026-03-26T10:29:12.096600" elapsed="15.799565"/>
+<status status="FAIL" start="2026-03-30T08:41:39.969379" elapsed="17.620643"/>
 </suite>
-<status status="FAIL" start="2026-03-26T10:29:12.090377" elapsed="15.812217"/>
+<status status="FAIL" start="2026-03-30T08:41:39.943773" elapsed="17.649158"/>
 </suite>
-<status status="FAIL" start="2026-03-26T10:29:12.044932" elapsed="15.863845"/>
+<status status="FAIL" start="2026-03-30T08:41:39.862296" elapsed="17.735268"/>
 </suite>
 <statistics>
 <total>
