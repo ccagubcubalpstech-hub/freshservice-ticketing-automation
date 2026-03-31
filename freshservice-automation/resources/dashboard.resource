@@ -4,6 +4,7 @@ Library           SeleniumLibrary
 
 **** Variables ***
 ${URL}                        https://alps-technologies.freshservice.com/a/dashboard/default
+${ICON_DASHBOARD}             //*[@id="freshservice-logo"]/img
 ${TXTBOX_SEARCH}              
 ${BTN_DASHBOARD}              
 ${BTN_TICKETS}                

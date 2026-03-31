@@ -18,7 +18,7 @@ Login To Freshservice
     Input Text                                                  ${TXTBOX_USERNAME}    qatester.shane@gmail.com
     Input Text                                                  ${TXTBOX_PASSWORD}    Alps1234*
     Click Button                                                ${BTN_SIGNIN}
-    Wait Until Element Is Visible                               PUT DASHBOARD TITLE ELEMENT HERE
+    Wait Until Element Is Visible                               PUT DASHBOARD TITLE ELEMENT HERE        600s
 
 Dashboard to Tickets List
     Click Element                                               ${BTN_TICKETS_LIST}

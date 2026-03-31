@@ -6,6 +6,7 @@ Library           SeleniumLibrary
 ${HEADER_CREATE_TICKET}                               //h2[normalize-space()='New Incident']                             
 ${DROPDOWN_SELECT_TEMPLATE}                           //div[@role='combobox' and @aria-label='Select template']
 ${TXTBOX_REQUESTER}                                   //input[@role='combobox' and @placeholder='Search' and @aria-required='true']
+${REQUESTER_RESULT}
 ${TXTBOX_REQUESTER_OPTION}                            //span[normalize-space()='Add new requester']
 ${TXTBOX_SUBJECT}                                     //input[@name='ticket[subject]']
 ${CMBBOX_SOURCE}                                      //input[@role='combobox' and @placeholder='Select' and @aria-required='true']
@@ -29,7 +30,7 @@ ${FONT_BOLD}                                          //button[@data-cmd='bold']
 ${FONT_ITALIC}                                        //button[@data-cmd='italic']
 ${FONT_UNDERLINE}                                     //button[@data-cmd='underline']
 ${BTN_ORDERLIST}                                      //button[@data-cmd='formatOL']
-# ${DROPDOWN_ORDERLIST} - cannot be identified                                 
+# ${DROPDOWN_ORDERLIST} - cannot be identified                                
 ${OL_DEFAULT}                                         //*[@id="dropdown-menu-formatOLOptions-1"]/div/div/ul/li[1]/a
 ${OL_LOWERALPHA}                                      //div[contains(@id,'formatOLOptions')]//a[normalize-space()='Lower Alpha']
 ${OL_LOWERGREEK}                                      //div[contains(@id,'formatOLOptions')]//a[normalize-space()='Lower Greek']
@@ -62,8 +63,8 @@ ${TXTBOX_END_DATE}
 ${TXTBOX_END_TIME}                                   
 ${BTN_RESET_END_DATE_TIME}                            
 ${PLANNED_EFFORT}                                     
-${BTN_CANCEL}                                         
-${BTN_SUBMIT}                                         
+${BTN_CANCEL}                                        
+${BTN_SUBMIT}                                        //button[@type='submit' and normalize-space()='Submit']                               
 
 
 

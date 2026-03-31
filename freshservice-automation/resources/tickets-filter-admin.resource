@@ -26,13 +26,13 @@ ${OL_SELECT_TIME_PERIOD}               //li[@role='option' and normalize-space()
 #IF SELECT TIME PERIOD IS CHOSEN
 ${TXTBOX_CHOOSE_RANGE}                 //li[@role='option' and normalize-space()='${OL_SELECT_TIME_PERIOD}']
 ${TXTBOX_AGENTS}                       //label[normalize-space()='Agents']/following::input[@role='combobox'][1]
-#COMBOBOX OPTIONS                      
+${AGENTS_RESULT}                     
 ${TXTBOX_REQUESTERS}                   //input[contains(@id,'requester_id')]
-#COMBOBOX OPTIONS
+${REQUESTERS_RESULT}
 ${TXTBOX_DEPARTMENTS}                  //input[contains(@id,'department_id')]
-#COMBOBOX OPTIONS
+${DEPARTMENTS_RESULT}
 ${TXTBOX_GROUPS}                       //input[contains(@id,'group_id')]
-#COMBOBOX OPTIONS
+${GROUPS_RESULT}
 ${DROPDOWN_START_DATE}                 //label[normalize-space()='Planned Start Date']/following-sibling::div//div[@role='combobox']
 ${OL_DATE_ANY}                         (//li[@role='option' and normalize-space()='Any'])[1]
 ${OL_DATE_TODAY}                       (//li[@role='option' and normalize-space()='Today'])[1]
