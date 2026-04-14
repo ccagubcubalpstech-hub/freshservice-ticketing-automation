@@ -20,7 +20,8 @@ Login as Tester Account
     Input Text                                                  ${TXTBOX_USERNAME}    qatester.kriss@gmail.com
     Input Text                                                  ${TXTBOX_PASSWORD}    jollibee123456
     Click Button                                                ${BTN_SIGNIN}
-    Wait Until Element Is Visible                               ${ICON_DASHBOARD}        600s
+    Wait Until Element Is Visible                               ${ICON_DASHBOARD} 
+    Capture Page Screenshot                                     C:/Users/Carl Cagubcub/Pictures/robot-screenshots/sample-shot/login-evidence.png
     
 Dashboard to Tickets List
     Click Element                                               ${BTN_TICKETS_LIST}
