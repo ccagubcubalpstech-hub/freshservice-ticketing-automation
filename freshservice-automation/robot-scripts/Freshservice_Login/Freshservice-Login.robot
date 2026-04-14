@@ -5,6 +5,7 @@ Resource             ../../keywords/keywords.resource
 Suite Teardown       Close Browser
 
 *** Test Cases ***
-Login To Freshservice
+Access Tickets List
     [Documentation]    Logs in to Freshservice with valid credentials.
-    Login To Freshservice
+    Open URL via Browser
+    Login as Tester Account  

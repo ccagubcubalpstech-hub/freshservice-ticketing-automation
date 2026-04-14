@@ -11,16 +11,25 @@ Library              SeleniumLibrary
 
 
 *** Keywords ***
-Login To Freshservice
+Open URL via Browser
     Open Browser                                                ${URL}                ${BROWSER}
     Maximize Browser Window
     Wait Until Element Is Visible                               ${TXTBOX_USERNAME}
-    Input Text                                                  ${TXTBOX_USERNAME}    qatester.shane@gmail.com
-    Input Text                                                  ${TXTBOX_PASSWORD}    Alps1234*
+    
+Login as Tester Account    
+    Input Text                                                  ${TXTBOX_USERNAME}    qatester.kriss@gmail.com
+    Input Text                                                  ${TXTBOX_PASSWORD}    jollibee123456
     Click Button                                                ${BTN_SIGNIN}
-    Wait Until Element Is Visible                               PUT DASHBOARD TITLE ELEMENT HERE        600s
-
+    Wait Until Element Is Visible                               ${ICON_DASHBOARD}        600s
+    
 Dashboard to Tickets List
     Click Element                                               ${BTN_TICKETS_LIST}
+  
+
+
+
+
+
+
     Wait Until Element Is Visible                               PUT TICKETS LIST TITLE ELEMENT HERE
 

@@ -5,3 +5,6 @@ Resource             ../../keywords/keywords.resource
 Suite Teardown       Close Browser
 
 *** Test Cases ***
+
+Test Procedure Example:
+    Dashboard to Tickets List

@@ -4,11 +4,11 @@ Library           SeleniumLibrary
 
 **** Variables ***
 ${URL}                        https://alps-technologies.freshservice.com/a/dashboard/default
-${ICON_DASHBOARD}             //*[@id="freshservice-logo"]/img
+${ICON_DASHBOARD}             /html/body/div[1]/div[9]/div[1]/div/div/div/div[2]/a[1]/img
 ${TXTBOX_SEARCH}              
 ${BTN_DASHBOARD}              
-${BTN_TICKETS}                
-${BTN_TICKETS_LIST}           
+${BTN_TICKETS}                /html/body/div[1]/div[9]/div[1]/div/div/div/nav/ul/li[3]/a/svg/g[2]/path
+${BTN_TICKETS_LIST}           /html/body/div[1]/div[9]/div[1]/div/div/div/nav/ul/li[3]/ul/li[1]/a          
 ${BTN_TICKETS_BOARD}          
 ${BTN_OFFBOARDING_REQUESTS}    
 ${BUTN_PROBLEMS}               

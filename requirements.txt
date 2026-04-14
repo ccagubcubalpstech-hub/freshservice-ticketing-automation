@@ -1,0 +1,8 @@
+robotframework
+robotframework-seleniumlibrary
+selenium
+webdriver-manager
+robotframework-requests
+robotframework-pabot
+robotframework-retryfailed
+python-dotenv
